@@ -21,4 +21,8 @@ export class GameControlComponent implements OnInit {
       console.log(this.counter++);
     }, 1000);
   }
+
+  onPauseGame() {
+    clearInterval(this.interval);
+  }
 }
